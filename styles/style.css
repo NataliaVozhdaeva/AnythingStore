@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.button {
+  min-height: 20px;
+  min-width: 60px;
+  border: solid 1px #222;
+  box-shadow: 5px 5px 5px 2px #eee;
+}
+
+.button:active {
+  color: #222;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.header {
+  width: 100vw;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header__nav {
+  display: flex;
+  min-height: 85px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  left: -10px;
+  border: 1px solid #222;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  left: -10px;
+  border: 1px solid #222;
+  transform: rotate(45deg);
+}
+
+a:hover {
+  border-bottom: #222 1px solid;
+}
+
+.main {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+.main__header {
+  margin-left: 75px;
+}
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.goods__item {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  flex-grow: 1;
+  border: solid 1px #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.goods__button {
+  width: 200px;
+  height: 40px;
+}
+
+.goods__img {
+  width: 70%;
+  max-height: 99%;
+}
+
+.description {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  width: 25%;
+}
+
+.form {
+  display: flex;
+  width: 500px;
+  padding: 50px 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.form__header {
+  display: block;
+  width: 100%;
+}
+
+input {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.form__button {
+  width: 90vw;
+  height: 40px;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #eee;
+  padding-top: 50px;
+}
+
+.footer__header {
+  margin-left: 50px;
+}
+
+.footer__nav {
+  width: 100vw;
+  display: flex;
+  min-height: 85px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #222;
+  position: relative;
+}
+
+.footer__item {
+  display: flex;
+  gap: 10px;
+}

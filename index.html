@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="styles/modalWindows-style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/small-device.css" />-->
+
+    <title>AnythingStore</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="header__nav">
+          <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Каталог</a></li>
+          <li class="nav__item logo"><a class="nav__link" href="">logo</a></li>
+          <li class="nav__item"><a class="nav__link" href=""> Поставщики</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main__header">Магазин всяких штук</h1>
+      <section class="goods">
+        <div class="goods__item">
+          <h3 class="goods__header">Штука</h3>
+          <img class="goods__img" src="img/zaglu6ka.jpg" title="Штука" alt="фото штуки" />
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugiat
+            vero, consequuntur sit pariatur consequatur tempore dolorem et. Totam nostrum
+            a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
+            Цена
+          </div>
+          <button class="goods__button button">Заказать</button>
+        </div>
+        <div class="goods__item">
+          <h3 class="goods__header">Другая штука</h3>
+          <img
+            class="goods__img"
+            src="img/zaglu6ka2.jpg"
+            title="Другая штука"
+            alt="фото штуки"
+          />
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugiat
+            vero, consequuntur sit pariatur consequatur tempore dolorem et. Totam nostrum
+            a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
+            Цена
+          </div>
+          <button class="goods__button button">Заказать</button>
+        </div>
+        <div class="goods__item">
+          <h3 class="goods__header">Еще одна штука</h3>
+          <img
+            class="goods__img"
+            src="img/zaglu6ka3.jpeg"
+            title="Еще одна штука"
+            alt="фото штуки"
+          />
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugiat
+            vero, consequuntur sit pariatur consequatur tempore dolorem et. Totam nostrum
+            a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
+            Цена
+          </div>
+          <button class="goods__button button">Заказать</button>
+        </div>
+        <div class="goods__item">
+          <h3 class="goods__header">Штука, которая не как все другие</h3>
+          <img
+            class="goods__img"
+            src="img/zaglu6ka4.jpeg"
+            title="Штука, которая не как все другие"
+            alt="фото штуки"
+          />
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugiat
+            vero, consequuntur sit pariatur consequatur tempore dolorem et. Totam nostrum
+            a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
+            Цена
+          </div>
+          <button class="goods__button button">Заказать</button>
+        </div>
+      </section>
+      <form class="form" name="order" method="post" action="URL">
+        <h4 class="form__header">Оформить заказ</h4>
+        <label for="name"
+          >Зовите меня <br />
+          <input
+            id="name"
+            type="text"
+            placeholder="Иван Иванович"
+            required
+            pattern="[А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23}|?:\s\w+"
+            value=""
+          />
+        </label>
+        <label for="goodsName">
+          Хочу, чтобы у меня была<br />
+          <input id="goodsName" name="goodsName" list="goods" required />
+          <datalist id="goods">
+            <option value="Штука"></option>
+            <option value="Другая штука"></option>
+            <option value="Еще одна штука"></option>
+            <option value="Штука, которая не как другие штуки"></option>
+          </datalist>
+        </label>
+        <label for="contactWith">
+          Номер для связи<br />
+          <input
+            type="tel"
+            id="contactWith"
+            name="contactWith"
+            placeholder="+7-ХХХ-ХХХ-ХХ-ХХ"
+            required
+          />
+        </label>
+        <button class="form__button button" type="submit">Готово!</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <h4 class="footer__header">Тут напомним всем, какие у нас классные штуки</h4>
+      <ul class="footer__nav">
+        <li class="footer__item">Еще раз контакты</li>
+        <li class="footer__item">Отзывы довольных клиентов</li>
+        <li class="footer__item">Форма обратной связи</li>
+        <li class="footer__item">
+          <div class="social insta"><a href="" class="footer__link" alt="insta"></a></div>
+          <div class="social vk"><a href="" class="footer__link" alt="vk"></a></div>
+          <div class="social twitter">
+            <a href="" class="footer__link" alt="twitter"></a>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <!--<script type="text/javascript" src="main.js"></script>-->
+  </body>
+</html>
