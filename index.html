@@ -85,37 +85,37 @@
           <button class="goods__button button">Заказать</button>
         </div>
       </section>
-      <form class="form" name="order" method="post" action="URL">
+      <form class="form" name="order">
         <h4 class="form__header">Оформить заказ</h4>
         <label for="name"
           >Зовите меня <br />
           <input
             id="name"
             type="text"
+            name="name"
             placeholder="Иван Иванович"
-            required
-            pattern="[А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23}|?:\s\w+"
-            value=""
+            class="_rec"
           />
         </label>
         <label for="goodsName">
-          Хочу, чтобы у меня была<br />
-          <input id="goodsName" name="goodsName" list="goods" required />
-          <datalist id="goods">
-            <option value="Штука"></option>
-            <option value="Другая штука"></option>
-            <option value="Еще одна штука"></option>
-            <option value="Штука, которая не как другие штуки"></option>
-          </datalist>
+          Хочу, чтобы у меня была <br />
+          <select id="goodsName" name="goodsName">
+            <option value="Штука">Штука</option>
+            <option value="Другая штука">Другая штука</option>
+            <option value="Еще одна штука">Еще одна штука</option>
+            <option value="Штука, которая не как все другие">
+              Штука, которая не как все другие
+            </option>
+          </select>
         </label>
         <label for="contactWith">
           Номер для связи<br />
           <input
-            type="tel"
             id="contactWith"
+            type="tel"
             name="contactWith"
-            placeholder="+7-ХХХ-ХХХ-ХХ-ХХ"
-            required
+            placeholder="+7ХХХХХХХХХХ"
+            class="_rec"
           />
         </label>
         <button class="form__button button" type="submit">Готово!</button>
@@ -136,6 +136,6 @@
         </li>
       </ul>
     </footer>
-    <!--<script type="text/javascript" src="main.js"></script>-->
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
