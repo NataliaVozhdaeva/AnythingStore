@@ -36,6 +36,7 @@ a {
   min-height: 85px;
   justify-content: space-around;
   align-items: center;
+  background-color: #ccc;
 }
 
 .logo {
