@@ -12,7 +12,7 @@ $mail -> setLanguage ('ru', 'phpmailer/language/');
 $mail -> isHTML(true);
 
 $mail -> setFrom('store', 'order');
-$mail -> addAddress ('elf_19@mail.ru');
+$mail -> addAddress ('example@example.ru');
 $mail -> Subject('You have a new order');
 
 $good = $_POST['goodsName'];
@@ -39,6 +39,5 @@ $response = ['message' => $message];
 
 header('Content-type: application/json');
 echo json_encode($response)
-
 
 ?>
