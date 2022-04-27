@@ -34,7 +34,9 @@
             a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
             Цена
           </div>
-          <button class="goods__button button">Заказать</button>
+          <button class="goods__button button open-modal" data-modal="modal">
+            Заказать
+          </button>
         </div>
         <div class="goods__item">
           <h3 class="goods__header">Другая штука</h3>
@@ -50,7 +52,9 @@
             a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
             Цена
           </div>
-          <button class="goods__button button">Заказать</button>
+          <button class="goods__button button open-modal" data-modal="modal">
+            Заказать
+          </button>
         </div>
         <div class="goods__item">
           <h3 class="goods__header">Еще одна штука</h3>
@@ -66,7 +70,9 @@
             a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
             Цена
           </div>
-          <button class="goods__button button">Заказать</button>
+          <button class="goods__button button open-modal" data-modal="modal">
+            Заказать
+          </button>
         </div>
         <div class="goods__item">
           <h3 class="goods__header">Штука, которая не как все другие</h3>
@@ -82,11 +88,23 @@
             a, porro hic aliquid pariatur? Vel saepe in sunt quia. (Описание штуки) <br />
             Цена
           </div>
-          <button class="goods__button button">Заказать</button>
+          <button class="goods__button button open-modal" data-modal="modal">
+            Заказать
+          </button>
         </div>
       </section>
-      <form class="form" name="order">
+      <form class="form modal-window" data-modal="modal" name="order">
         <h4 class="form__header">Оформить заказ</h4>
+        <svg
+          class="modal__cross js-modal-close"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81
+             9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+          />
+        </svg>
         <label for="name"
           >Зовите меня <br />
           <input
@@ -120,6 +138,7 @@
         </label>
         <button class="form__button button" type="submit">Готово!</button>
       </form>
+      <div class="overlay-modal"></div>
     </main>
     <footer class="footer">
       <h4 class="footer__header">Тут напомним всем, какие у нас классные штуки</h4>
